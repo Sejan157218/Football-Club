@@ -183,8 +183,34 @@ input[type="checkbox"]{
 .best-players .player .player-info p{
     margin-top: 10px;
 }
-
-
+    /* video */
+.f-video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #2a4858, transparent);
+    height: 500px;
+}
+.highlight{
+    display: flex;
+    align-items: center;
+}
+.f-video .highlight-info{
+    width: 466px;
+    height: 233px;
+    border: 15px solid #2a6e92;
+    position: relative;
+    padding-right: 22px;
+    position: relative;
+    left: 33px;
+    bottom: 93px;
+    border-radius: 15px;
+    z-index: 1;
+}
+.f-video .highlight-video{
+    z-index: 2;
+}
 /* Footer */
 footer{
     display: flex;
@@ -217,6 +243,10 @@ footer img{
     margin-bottom: 63px;
     color: #84acc1;
 }
+.youtube-fram{
+    width: 500px;
+    height: 350px;
+}
 @media only screen and (max-width:688px) {
 .nav-bar .nav{
     width: 100%;
@@ -247,6 +277,25 @@ footer img{
     grid-template-columns: repeat(1,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
+}
+
+.f-video .highlight-info{
+    height: 400px;
+    width: 200px;
+}
+.highlight-video{
+    position: relative;
+    bottom: 330px;
+}
+.f-video .youtube-fram {
+    height: 300px;
+    width: 300px;
+}
+.highlight{
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 198px;
 }
 footer{
     width: 100%;
@@ -284,10 +333,26 @@ footer img {
     footer{
         width: 100%;
     }
-    /* footer img {
-        width: 268.87px;
-        height: 110px;
-    } */
+    .f-video .highlight-info{
+        height: 300px;
+        width: 300px;
+    }
+    .highlight-video{
+        position: relative;
+        bottom: 330px;
+        left: 200px;
+    }
+    .f-video .youtube-fram {
+        height: 300px;
+        width: 500px;
+    }
+    .highlight{
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 198px;
+        right: 100px;
+
 }
 @media only screen and (min-width:993px)and (max-width:1312px){
     header {
@@ -317,6 +382,25 @@ footer img {
         color: #FFFFFF;
         margin-top: 121px;
     }
+    .f-video .highlight-info{
+        height: 300px;
+        width: 300px;
+    }
+    .highlight-video{
+        position: relative;
+        bottom: 330px;
+        left: 200px;
+    }
+    .f-video .youtube-fram {
+        height: 300px;
+        width: 500px;
+    }
+    .highlight{
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 198px;
+        right: 100px;
 
 }
     
