@@ -24,7 +24,12 @@ body{
 
  /* Nab bar */
 .nav-bar{
-    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.nav-bar .nav{
+    width: 1140px;
     height: 44px;
     display: flex;
     justify-content: space-between;
@@ -82,9 +87,11 @@ input[type="checkbox"]{
 
 /* Copa Name */
 .Copa-America{
-    width: 1160px;
+    width: 100%;
     display: flex;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .Copa-America .Copa-America-name h1{
@@ -186,8 +193,6 @@ footer{
     border-radius: 10px
 }
 .footer{
-    width: 483.87px;
-    height: 213px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,6 +216,120 @@ footer img{
     margin-bottom: 63px;
     color: #84acc1;
 }
+@media only screen and (max-width:688px) {
+.nav-bar .nav{
+    width: 100%;
+}
+.nav-bar ul li a, .login a {
+    color: #FFFFFF;
+    font-size: 9px;
+}
+.Copa-America{
+    flex-direction: column;
+    align-items: center;
+}    
+.Copa-America .Copa-America-banner img {
+    width: 329px;
+    height: 259px;
+    margin-top: 67px;
+    margin-left: 0px;
+}
+.Copa-America .Copa-America-name h1 {
+    width: 278px;
+    height: 138px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 121px;
+}
+.best-players{
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+footer{
+    width: 100%;
+}
+footer img {
+    width: 268.87px;
+    height: 110px;
+}
+}
+
+/* @media only screen and (min-width:689px) and (max-width:992px){
+    header {
+        width: 100%;        
+    }
+
+    .nav-icon-details {
+        width: 100%;
+        font-size: 1em;
+    }
+    .nab-bar{
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .Committed-to-success {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .best-services,
+    .team-member,
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 1em;
+    }
+} */
+/* @media only screen and (min-width:993px){
+    header {
+        width: 100%;        
+    }
+    body{
+        margin: 2%;
+    }
+
+    .nav-icon-details {
+        width: 100%;
+        font-size: 1em;
+    }
+    .nab-bar{
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .Committed-to-success {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .best-services,
+    .team-member,.blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 1em;
+    }
+} */
     
 
 
