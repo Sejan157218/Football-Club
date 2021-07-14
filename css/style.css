@@ -14,6 +14,7 @@ body{
 }
  /* Header */
  header{
+    height: 677px;
     background-color: #0f5175;
     display: flex;
     align-items: center;
@@ -231,7 +232,7 @@ footer img{
 .Copa-America .Copa-America-banner img {
     width: 329px;
     height: 259px;
-    margin-top: 67px;
+    margin-top: 50px;
     margin-left: 0px;
 }
 .Copa-America .Copa-America-name h1 {
@@ -240,7 +241,7 @@ footer img{
     font-size: 36px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: 121px;
+    margin-top: 46px;
 }
 .best-players{
     grid-template-columns: repeat(1,1fr);
@@ -256,80 +257,68 @@ footer img {
 }
 }
 
-/* @media only screen and (min-width:689px) and (max-width:992px){
-    header {
-        width: 100%;        
+@media only screen and (min-width:689px) and (max-width:992px){
+    .nav-bar .nav{
+    width: 100%;
     }
-
-    .nav-icon-details {
+    /* .nav-bar ul li a, .login a {
+        color: #FFFFFF;
+        font-size: 9px;
+    } */
+    .Copa-America{
+        flex-direction: column;
+        align-items: center;
+    }    
+    .Copa-America .Copa-America-banner img {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .Copa-America .Copa-America-name h1 {
+        margin-top: 46px;
+    }
+    .best-players{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+    }
+    footer{
         width: 100%;
-        font-size: 1em;
     }
-    .nab-bar{
-        width: 100%;
-        font-size: 1.5em;
-    }
-
-    .Committed-to-success {
-        width: 100%;
-        background-size: cover;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .best-services,
-    .team-member,
-    .blogs {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 30px;
-    }
-
-    footer {
-        width: 100%;
-        font-size: 1em;
-    }
-} */
-/* @media only screen and (min-width:993px){
+    /* footer img {
+        width: 268.87px;
+        height: 110px;
+    } */
+}
+@media only screen and (min-width:993px)and (max-width:1312px){
     header {
         width: 100%;        
     }
     body{
-        margin: 2%;
+        margin: 5%;
     }
-
-    .nav-icon-details {
+    .nav-bar .nav{
         width: 100%;
-        font-size: 1em;
-    }
-    .nab-bar{
-        width: 100%;
-        font-size: 1.5em;
-    }
+        }
+    
 
-    .Committed-to-success {
-        width: 100%;
-        background-size: cover;
+    .best-players{
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
     }
-
-    .container {
+    footer{
         width: 100%;
     }
-
-    .best-services,
-    .team-member,.blogs {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-row-gap: 30px;
+    .Copa-America .Copa-America-name h1 {
+        width: 220px;
+        height: 130px;
+        font-size: 28px;    
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-top: 121px;
     }
 
-    footer {
-        width: 100%;
-        font-size: 1em;
-    }
-} */
+}
     
 
 
